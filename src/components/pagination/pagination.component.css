@@ -1,0 +1,14 @@
+.container_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-item:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .container_pagination {
+    max-width: 400px;
+  }
+}

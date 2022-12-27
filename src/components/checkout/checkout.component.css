@@ -1,0 +1,30 @@
+.checkout {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  height: max-content;
+  margin-top: 50px;
+}
+
+.checkout__ad {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.checkout__title {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+@media screen and (max-width: 768px) {
+  .checkout {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .checkout {
+    margin-top: 40px;
+  }
+}

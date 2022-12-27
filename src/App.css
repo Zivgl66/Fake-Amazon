@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
+  min-height: calc(100vh - 40px);
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+}
+.main {
+  flex: 1;
+  display: block;
+  width: 100%;
+}
+footer {
+  margin-top: 130px;
+  display: block;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 320px) {
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+}
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+}
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+}
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3) {
 }

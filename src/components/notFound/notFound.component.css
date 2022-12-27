@@ -1,0 +1,26 @@
+.four-0-four-image {
+  display: block;
+  margin: 60px auto;
+}
+
+.four-0-four-msg {
+  text-align: center;
+  text-transform: capitalize;
+  color: #383838;
+}
+
+.four-0-four-msg a {
+  color: #383838;
+}
+
+@media screen and (max-width: 480px) {
+  .four-0-four-image {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .four-0-four-image {
+    width: 200px;
+  }
+}

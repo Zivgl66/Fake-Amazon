@@ -1,13 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import axios from "axios";
+// import store from "./store";
+import { Provider } from "react-redux";
+import { persistor, store } from "./store";
+import { PersistGate } from "redux-persist/integration/react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+//default url axios
+axios.defaults.baseURL = process.env.REACT_APP_BASE_API_URL;
+
+/* import bootstrap to react project */
+// import "mdb-react-ui-kit/dist/css/mdb.min.css";
+// import "../node_modules/bootstrap/dist/css/bootstrap.css";
+// import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <App />
+      </PersistGate>
+    </Provider>
   </React.StrictMode>
 );
 
