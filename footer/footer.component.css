@@ -1,0 +1,26 @@
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.footer_socialmedia {
+  transition: all 300ms ease-in-out;
+}
+.footer_socialmedia:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .socialmedia_icons {
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer_text {
+    font-size: 13px;
+  }
+}
