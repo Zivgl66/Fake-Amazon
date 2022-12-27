@@ -39,8 +39,16 @@ const FooterComponent = () => {
               </CDBBtn>
             </a>
             <a href="http://www.instagram.com" className="footer_socialmedia">
-              <CDBBtn flat color="dark" className="p-2">
+              <CDBBtn flat color="dark" className="me-3 p-2">
                 <CDBIcon fab icon="instagram" style={{ color: "#fe0061 " }} />
+              </CDBBtn>
+            </a>
+            <a
+              href="http://www.linkedin.com/in/ziv-gliser-b0734022b"
+              className="footer_socialmedia"
+            >
+              <CDBBtn flat color="dark" className=" p-2">
+                <CDBIcon fab icon="linkedin" style={{ color: "#0a66c2 " }} />
               </CDBBtn>
             </a>
           </CDBBox>
