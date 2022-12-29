@@ -298,22 +298,34 @@ const NavbarComponentTwo = () => {
       </div>
       <div className="second_menu ">
         <div className="catagories">
-          <a href="http://localhost:3000/productstable/Home & Kitchen">
+          <a
+            href={`${process.env.REACT_APP_BASE_URL}/productstable/Home & Kitchen`}
+          >
             <button>Home & Kitchen</button>
           </a>
-          <a href="http://localhost:3000/productstable/Cell Phones & Accessories">
+          <a
+            href={`${process.env.REACT_APP_BASE_URL}/productstable/Cell Phones & Accessories`}
+          >
             <button>Cell Phones & Accessories</button>
           </a>
-          <a href="http://localhost:3000/productstable/Computers & Accessories">
+          <a
+            href={`${process.env.REACT_APP_BASE_URL}/productstable/Computers & Accessories`}
+          >
             <button>Computers & Accessories</button>
           </a>
-          <a href="http://localhost:3000/productstable/Lighting & Ceiling Fans">
+          <a
+            href={`${process.env.REACT_APP_BASE_URL}/productstable/Lighting & Ceiling Fans`}
+          >
             <button> Lighting & Ceiling Fans</button>
           </a>
-          <a href="http://localhost:3000/productstable/Tools & Home Improvement">
+          <a
+            href={`${process.env.REACT_APP_BASE_URL}/productstable/Tools & Home Improvement`}
+          >
             <button> Tools & Home Improvement</button>
           </a>
-          <a href="http://localhost:3000/productstable/Televisions & Video Products">
+          <a
+            href={`${process.env.REACT_APP_BASE_URL}/productstable/Televisions & Video Products`}
+          >
             <button> Televisions & Video Products</button>
           </a>
         </div>
