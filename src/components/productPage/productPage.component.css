@@ -150,6 +150,9 @@
 .related_products_title {
   margin-left: 30px;
 }
+.container_related_products {
+  margin-top: 80px;
+}
 
 @media screen and (max-width: 1200px) {
   .product_center {
@@ -174,6 +177,9 @@
   }
   .product_title h3 {
     font-size: 16px;
+  }
+  .container_related_products {
+    margin-top: 100px;
   }
 }
 @media screen and (max-width: 845px) {
@@ -238,7 +244,7 @@
     align-self: center;
   }
   .container_related_products {
-    margin-top: 20px;
+    margin-top: 300px;
   }
 }
 @media screen and (max-width: 370px) {
@@ -262,5 +268,8 @@
   }
   .product_shipping h6 {
     font-size: 14px;
+  }
+  .container_related_products {
+    margin-top: 200px;
   }
 }
