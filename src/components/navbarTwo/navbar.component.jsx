@@ -298,34 +298,22 @@ const NavbarComponentTwo = () => {
       </div>
       <div className="second_menu ">
         <div className="catagories">
-          <Link
-            to={`${process.env.REACT_APP_BASE_URL}/productstable/Home & Kitchen`}
-          >
+          <Link to={`/productstable/Home & Kitchen`}>
             <button>Home & Kitchen</button>
           </Link>
-          <Link
-            to={`${process.env.REACT_APP_BASE_URL}/productstable/Cell Phones & Accessories`}
-          >
+          <Link to={`/productstable/Cell Phones & Accessories`}>
             <button>Cell Phones & Accessories</button>
           </Link>
-          <Link
-            to={`${process.env.REACT_APP_BASE_URL}/productstable/Computers & Accessories`}
-          >
+          <Link to={`/productstable/Computers & Accessories`}>
             <button>Computers & Accessories</button>
           </Link>
-          <Link
-            to={`${process.env.REACT_APP_BASE_URL}/productstable/Lighting & Ceiling Fans`}
-          >
+          <Link to={`/productstable/Lighting & Ceiling Fans`}>
             <button> Lighting & Ceiling Fans</button>
           </Link>
-          <Link
-            to={`${process.env.REACT_APP_BASE_URL}/productstable/Tools & Home Improvement`}
-          >
+          <Link to={`/productstable/Tools & Home Improvement`}>
             <button> Tools & Home Improvement</button>
           </Link>
-          <Link
-            to={`${process.env.REACT_APP_BASE_URL}/productstable/Televisions & Video Products`}
-          >
+          <Link to={`/productstable/Televisions & Video Products`}>
             <button> Televisions & Video Products</button>
           </Link>
         </div>
