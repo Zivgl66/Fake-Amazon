@@ -141,7 +141,7 @@ const NavbarComponentTwo = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <NavLink to="/">
+        <NavLink to="/" onClick={() => setShowNavbar(false)}>
           <button className="navBtn_logo">
             <img
               className="logoImg"
@@ -163,7 +163,10 @@ const NavbarComponentTwo = () => {
         </div>
         <button
           className="searchInputButton"
-          onClick={() => handleSearch(value)}
+          onClick={() => {
+            handleSearch(value);
+            setShowNavbar(false);
+          }}
         >
           <FaSearch style={{ fontSize: "24px" }} />
         </button>
@@ -171,16 +174,21 @@ const NavbarComponentTwo = () => {
       <div
         className="menu-icon"
         ref={hamburgerMenu}
-        contentEditable
-        onBlur={() => {
-          if (onFocusProfile) setShowNavbar(!showNavbar);
-        }}
-        onFocus={() => {
-          setShowNavbar(!showNavbar);
-        }}
-        onClick={() => handleShowNavbar()}
+        // contentEditable
+        // onBlur={() => {
+        //   if (onFocusProfile) setShowNavbar(!showNavbar);
+        // }}
+        // onFocus={() => {
+        //   setShowNavbar(!showNavbar);
+        // }}
+        // onClick={() => handleShowNavbar()}
       >
-        <MenuIcon />
+        <button
+          className="hamburgerBtn"
+          onClick={() => setShowNavbar(!showNavbar)}
+        >
+          <MenuIcon />
+        </button>
       </div>
       <div className={`nav-elements  ${showNavbar && "active"}`}>
         <ul>
@@ -211,6 +219,7 @@ const NavbarComponentTwo = () => {
                 <NavLink
                   to={loggedIn ? "/profile" : "#"}
                   className="dropDown_item"
+                  onClick={() => setShowNavbar(false)}
                 >
                   <div className="navBtn">
                     <div className="option">
@@ -222,21 +231,33 @@ const NavbarComponentTwo = () => {
                 </NavLink>
                 {user.isAdmin ? (
                   <>
-                    <NavLink to="/addproduct" className="dropDown_item">
+                    <NavLink
+                      to="/addproduct"
+                      className="dropDown_item"
+                      onClick={() => setShowNavbar(false)}
+                    >
                       <div className="navBtn">
                         <div className="option">
                           <span className="optionLineTwo">Add Product</span>
                         </div>
                       </div>
                     </NavLink>
-                    <NavLink to="/admintableusers" className="dropDown_item">
+                    <NavLink
+                      to="/admintableusers"
+                      className="dropDown_item"
+                      onClick={() => setShowNavbar(false)}
+                    >
                       <div className="navBtn">
                         <div className="option">
                           <span className="optionLineTwo">Users</span>
                         </div>
                       </div>
                     </NavLink>
-                    <NavLink to="/admintableproducts" className="dropDown_item">
+                    <NavLink
+                      to="/admintableproducts"
+                      className="dropDown_item"
+                      onClick={() => setShowNavbar(false)}
+                    >
                       <div className="navBtn">
                         <div className="option">
                           <span className="optionLineTwo">Products</span>
@@ -250,6 +271,7 @@ const NavbarComponentTwo = () => {
                 <NavLink
                   to={!loggedIn ? "/login" : "/signout"}
                   className="dropDown_item"
+                  onClick={() => setShowNavbar(false)}
                 >
                   <div className="navBtn">
                     <div className="option">
@@ -264,7 +286,7 @@ const NavbarComponentTwo = () => {
           </li>
           <li>
             <NavLink to="/orders" style={navStyle}>
-              <button className="navBtn">
+              <button className="navBtn" onClick={() => setShowNavbar(false)}>
                 <div className="option">
                   <span className="optionLineOne">Returns</span>
                   <span className="optionLineTwo">& Orders</span>
@@ -274,7 +296,7 @@ const NavbarComponentTwo = () => {
           </li>
           <li>
             <NavLink to="/yourprime" style={navStyle}>
-              <button className="navBtn">
+              <button className="navBtn" onClick={() => setShowNavbar(false)}>
                 <div className="option">
                   <span className="optionLineOne">Your</span>
                   <span className="optionLineTwo">Prime</span>
@@ -298,22 +320,40 @@ const NavbarComponentTwo = () => {
       </div>
       <div className="second_menu ">
         <div className="catagories">
-          <Link to={`/productstable/Home & Kitchen`}>
+          <Link
+            to={`/productstable/Home & Kitchen`}
+            onClick={() => setShowNavbar(false)}
+          >
             <button>Home & Kitchen</button>
           </Link>
-          <Link to={`/productstable/Cell Phones & Accessories`}>
+          <Link
+            to={`/productstable/Cell Phones & Accessories`}
+            onClick={() => setShowNavbar(false)}
+          >
             <button>Cell Phones & Accessories</button>
           </Link>
-          <Link to={`/productstable/Computers & Accessories`}>
+          <Link
+            to={`/productstable/Computers & Accessories`}
+            onClick={() => setShowNavbar(false)}
+          >
             <button>Computers & Accessories</button>
           </Link>
-          <Link to={`/productstable/Lighting & Ceiling Fans`}>
+          <Link
+            to={`/productstable/Lighting & Ceiling Fans`}
+            onClick={() => setShowNavbar(false)}
+          >
             <button> Lighting & Ceiling Fans</button>
           </Link>
-          <Link to={`/productstable/Tools & Home Improvement`}>
+          <Link
+            to={`/productstable/Tools & Home Improvement`}
+            onClick={() => setShowNavbar(false)}
+          >
             <button> Tools & Home Improvement</button>
           </Link>
-          <Link to={`/productstable/Televisions & Video Products`}>
+          <Link
+            to={`/productstable/Televisions & Video Products`}
+            onClick={() => setShowNavbar(false)}
+          >
             <button> Televisions & Video Products</button>
           </Link>
         </div>
