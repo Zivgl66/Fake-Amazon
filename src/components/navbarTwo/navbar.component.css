@@ -200,7 +200,11 @@
 .catagories a button:hover {
   opacity: 70%;
 }
-
+.hamburgerBtn {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
 @media screen and (max-width: 1080px) {
   .catagories a button {
     font-size: 10px;
