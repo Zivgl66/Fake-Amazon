@@ -1,7 +1,7 @@
 import "./navbar.component.css";
 import axios from "axios";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { authActions } from "../../store/auth";
 import Autosuggest from "react-autosuggest";
@@ -298,36 +298,36 @@ const NavbarComponentTwo = () => {
       </div>
       <div className="second_menu ">
         <div className="catagories">
-          <a
-            href={`${process.env.REACT_APP_BASE_URL}/productstable/Home & Kitchen`}
+          <Link
+            to={`${process.env.REACT_APP_BASE_URL}/productstable/Home & Kitchen`}
           >
             <button>Home & Kitchen</button>
-          </a>
-          <a
-            href={`${process.env.REACT_APP_BASE_URL}/productstable/Cell Phones & Accessories`}
+          </Link>
+          <Link
+            to={`${process.env.REACT_APP_BASE_URL}/productstable/Cell Phones & Accessories`}
           >
             <button>Cell Phones & Accessories</button>
-          </a>
-          <a
-            href={`${process.env.REACT_APP_BASE_URL}/productstable/Computers & Accessories`}
+          </Link>
+          <Link
+            to={`${process.env.REACT_APP_BASE_URL}/productstable/Computers & Accessories`}
           >
             <button>Computers & Accessories</button>
-          </a>
-          <a
-            href={`${process.env.REACT_APP_BASE_URL}/productstable/Lighting & Ceiling Fans`}
+          </Link>
+          <Link
+            to={`${process.env.REACT_APP_BASE_URL}/productstable/Lighting & Ceiling Fans`}
           >
             <button> Lighting & Ceiling Fans</button>
-          </a>
-          <a
-            href={`${process.env.REACT_APP_BASE_URL}/productstable/Tools & Home Improvement`}
+          </Link>
+          <Link
+            to={`${process.env.REACT_APP_BASE_URL}/productstable/Tools & Home Improvement`}
           >
             <button> Tools & Home Improvement</button>
-          </a>
-          <a
-            href={`${process.env.REACT_APP_BASE_URL}/productstable/Televisions & Video Products`}
+          </Link>
+          <Link
+            to={`${process.env.REACT_APP_BASE_URL}/productstable/Televisions & Video Products`}
           >
             <button> Televisions & Video Products</button>
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
