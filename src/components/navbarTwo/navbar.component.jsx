@@ -77,7 +77,7 @@ const NavbarComponentTwo = () => {
       navigate(`/productstable/searchvalueisempty`);
       setValue("");
     } else {
-      navigate(`/productstable/${value}`);
+      navigate(`/productstable/${value.toLowerCase()}`);
       setValue("");
       //navigate to products search page table
     }
