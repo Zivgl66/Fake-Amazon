@@ -20,19 +20,19 @@ const NavbarComponentTwo = () => {
   let navigate = useNavigate();
   const dispatch = useDispatch();
   const [showNavbar, setShowNavbar] = useState(false);
-  const [onFocus, setOnFocus] = useState(false);
+  const [onFocusProfile, setOnFocusProfile] = useState(false);
   const [onFocusHamburger, setOnFocusHamburger] = useState(false);
   const profileImg = useRef(null);
   const hamburgerMenu = useRef(null);
 
   const handleBlur = () => {
-    if (onFocus) {
+    if (onFocusProfile) {
       dropdown();
       profileImg.current.blur();
-      setOnFocus(false);
+      setOnFocusProfile(false);
     } else {
       profileImg.current.focus();
-      setOnFocus(true);
+      setOnFocusProfile(true);
     }
   };
 
@@ -173,12 +173,12 @@ const NavbarComponentTwo = () => {
         ref={hamburgerMenu}
         contentEditable
         onBlur={() => {
-          setShowNavbar(!showNavbar);
+          if (onFocusProfile) setShowNavbar(!showNavbar);
         }}
         onFocus={() => {
           setShowNavbar(!showNavbar);
         }}
-        onClick={handleShowNavbar}
+        onClick={() => handleShowNavbar()}
       >
         <MenuIcon />
       </div>
