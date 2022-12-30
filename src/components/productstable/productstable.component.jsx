@@ -124,7 +124,7 @@ const ProductsTableComponent = () => {
       setStartProductsArr(tempArr);
       setPosts(tempArr);
     }
-  }, []);
+  }, [search]);
 
   return (
     <div className="container_products_table">
