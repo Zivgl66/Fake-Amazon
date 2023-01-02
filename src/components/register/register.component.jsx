@@ -215,12 +215,12 @@ function RegisterComponent() {
             value={profileImage}
             onChange={(e) => setProfileImage(e.target.value)}
           />
-          <h5>Admin?</h5>
+          {/* <h5>Admin?</h5>
           <input
             type="checkbox"
             value={isAdmin}
             onChange={(e) => setIsAdmin(e.target.checked)}
-          />
+          /> */}
           <button
             type="submit"
             onClick={register}
