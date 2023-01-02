@@ -243,6 +243,7 @@
   }
   .product_image img {
     margin: 0 0;
+    max-height: 300px;
   }
 }
 
@@ -252,6 +253,10 @@
   }
   .product_left {
     align-self: center;
+  }
+  .product_description {
+    margin: 0;
+    padding: 10px 0;
   }
 }
 @media screen and (max-width: 370px) {
