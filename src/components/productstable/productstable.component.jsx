@@ -115,6 +115,7 @@ const ProductsTableComponent = () => {
 
   useEffect(() => {
     let tempArr = [];
+    setCurrentPage(1);
     let catagoryFound = catagoryNames.filter((c) => {
       return c === search;
     });
