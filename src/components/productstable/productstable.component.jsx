@@ -39,7 +39,7 @@ const ProductsTableComponent = () => {
   const divStyle = {
     background: " #2de1fd53",
     background:
-      "linear-gradient(0deg, rgba(123,202,232,0) 15%, #8badda68 51%, rgba(133,185,221,0) 85%)",
+      "linear-gradient(0deg, rgba(123,202,232,0) 15%, #4d648368 51%, rgba(133,185,221,0) 85%)",
     borderRadius: "25px",
     padding: "14px",
     marginTop: "10px",
