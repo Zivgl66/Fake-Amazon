@@ -52,14 +52,29 @@ const ProductsTableComponent = () => {
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
   const paginate_Prev = () => {
-    if (currentPage !== 1) setCurrentPage(currentPage - 1);
+    if (currentPage !== 1) {
+      setCurrentPage(currentPage - 1);
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // for smoothly scrolling
+      });
+    }
   };
   const paginate_Next = () => {
-    if (currentPage !== Math.ceil(posts.length / postPerPage))
+    if (currentPage !== Math.ceil(posts.length / postPerPage)) {
       setCurrentPage(currentPage + 1);
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // for smoothly scrolling
+      });
+    }
   };
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // for smoothly scrolling
+    });
   };
   function getStyles(name, catagoryName, theme) {
     return {
