@@ -1,6 +1,7 @@
 .product_page {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .container_productpage {
   height: 80vh;
@@ -16,10 +17,10 @@
   align-items: center;
   background: rgba(222, 222, 222, 0.36);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(203, 203, 203, 0.1);
+  box-shadow: 0 4px 30px #1d2f4652;
   backdrop-filter: blur(10.5px);
   -webkit-backdrop-filter: blur(10.5px);
-  border: 1px solid rgba(0, 0, 0, 0.49);
+  border: 5px solid #1d2f4652;
   padding: 50px;
 }
 
@@ -101,7 +102,7 @@
 .product_quantity {
   display: flex;
   background-color: none;
-  border-radius: 50%;
+  border-radius: 80%;
   padding: 10px;
 }
 .product_quantity:hover {
@@ -109,18 +110,18 @@
 }
 
 .product_quantity_number {
-  margin: 0px 3px;
+  margin: 0 8px;
   padding: 2px;
-  font-size: 18px;
+  font-size: 20px;
   color: rgb(99, 0, 99);
   font-weight: bold;
 }
 
 .product_btn_quantity {
-  margin: 2px;
+  margin: 0 2px;
   background-color: transparent;
   border: none;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: bold;
 }
 .product_btn_quantity:hover {
@@ -151,7 +152,7 @@
   margin-left: 30px;
 }
 .container_related_products {
-  margin-top: 80px;
+  /* margin-top: 50px; */
 }
 
 @media screen and (max-width: 1200px) {
@@ -179,7 +180,7 @@
     font-size: 16px;
   }
   .container_related_products {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 }
 @media screen and (max-width: 845px) {
@@ -208,7 +209,7 @@
     margin: 10px 30px;
   }
   .container_related_products {
-    margin-top: 300px;
+    margin-top: 150px;
   }
   .product_page {
     justify-content: space-between;
@@ -227,15 +228,24 @@
     margin: 0;
   }
 }
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 630px) {
+  .container_related_products {
+    margin-top: 180px;
+  }
+}
+@media screen and (max-width: 550px) {
   .related_products {
     flex-direction: column;
     align-items: center;
+  }
+  .container_related_products {
+    margin-top: 200px;
   }
   .product_image img {
     margin: 0 0;
   }
 }
+
 @media screen and (max-width: 500px) {
   .product_image img {
     width: 200px;
@@ -244,7 +254,7 @@
     align-self: center;
   }
   .container_related_products {
-    margin-top: 300px;
+    margin-top: 220px;
   }
 }
 @media screen and (max-width: 370px) {
@@ -270,6 +280,11 @@
     font-size: 14px;
   }
   .container_related_products {
-    margin-top: 200px;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 295px) {
+  .container_related_products {
+    margin-top: 350px;
   }
 }

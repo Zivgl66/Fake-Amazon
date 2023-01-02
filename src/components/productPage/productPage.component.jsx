@@ -202,8 +202,7 @@ const ProductPageComponent = () => {
               return (
                 <ProductItemComponent
                   id={p._id}
-                  title={p.title}
-                  name={p.name}
+                  title={p.name}
                   price={p.price}
                   rating={p.rating ? p.rating : 5}
                   image={p.imageURL}
