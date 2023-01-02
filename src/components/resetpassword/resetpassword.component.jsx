@@ -13,7 +13,7 @@ const ResetPasswordComponent = () => {
   const [errors, setErrors] = useState(false);
   const param = useParams();
   const navigate = useNavigate();
-  const url = `http://localhost:3001/api/users/reset-password/${param.id}/${param.token}`;
+  const url = `https://fake-amazon-server.onrender.com/api/users/reset-password/${param.id}/${param.token}`;
 
   useEffect(() => {
     const verifiyURL = async () => {
