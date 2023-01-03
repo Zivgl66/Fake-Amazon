@@ -1,5 +1,6 @@
 import "./footer.component.css";
 import { CDBFooter, CDBBtn, CDBIcon, CDBBox } from "cdbreact";
+import logoImg from "../../assets/pictures/logo.png";
 
 const FooterComponent = () => {
   return (
@@ -17,7 +18,7 @@ const FooterComponent = () => {
               <img
                 alt="logo"
                 style={{ color: "black" }}
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png"
+                src={logoImg}
                 width="36px"
               />
             </a>
