@@ -88,6 +88,7 @@ const ProductsTableComponent = () => {
     if (catagoryName.length === 0) {
       setPosts(startProductsArr);
     } else {
+      setCurrentPage(1);
       let tempArr = [];
       catagoryName.forEach((c) => {
         startProductsArr.forEach((p) => {
