@@ -24,7 +24,7 @@ const FooterComponent = () => {
           </CDBBox>
           <CDBBox>
             <small className="ml-2 footer_text">
-              &copy; fake Amazon, 2022. All rights reserved.
+              &copy; Amazonia, 2022. All rights reserved.
             </small>
           </CDBBox>
           <CDBBox display="flex" className="socialmedia_icons">
