@@ -8,6 +8,7 @@ import Autosuggest from "react-autosuggest";
 import { useEffect, useState, useRef } from "react";
 import { FaSearch } from "react-icons/fa";
 import MenuIcon from "@mui/icons-material/Menu";
+import logoImg from "../../assets/pictures/logo.png";
 
 const NavbarComponentTwo = () => {
   const loggedIn = useSelector((state) => state.auth.loggedIn);
@@ -143,10 +144,7 @@ const NavbarComponentTwo = () => {
       <div className="logo">
         <NavLink to="/" onClick={() => setShowNavbar(false)}>
           <button className="navBtn_logo">
-            <img
-              className="logoImg"
-              src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-            />
+            <img className="logoImg" src={logoImg} />
           </button>
         </NavLink>
       </div>
@@ -171,18 +169,7 @@ const NavbarComponentTwo = () => {
           <FaSearch style={{ fontSize: "24px" }} />
         </button>
       </div>
-      <div
-        className="menu-icon"
-        ref={hamburgerMenu}
-        // contentEditable
-        // onBlur={() => {
-        //   if (onFocusProfile) setShowNavbar(!showNavbar);
-        // }}
-        // onFocus={() => {
-        //   setShowNavbar(!showNavbar);
-        // }}
-        // onClick={() => handleShowNavbar()}
-      >
+      <div className="menu-icon" ref={hamburgerMenu}>
         <button
           className="hamburgerBtn"
           onClick={() => setShowNavbar(!showNavbar)}
