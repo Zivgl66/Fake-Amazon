@@ -1,70 +1,113 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Amazonia - Fake Amazon - CLIENT
 
-## Available Scripts
+check it [out](https://amazonia-nu.vercel.app/)
 
-In the project directory, you can run:
+![1](https://github.com/Zivgl66/Fake-Amazon-server/assets/95753868/ca377faf-c61d-44ce-b6cd-c25510315c46)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project contains the client-side code for the fake Amazon website, an e-commerce platform built with React. 
+The client-side code provides the user interface and interaction elements for the website.
 
-### `npm test`
+## Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The client-side code for the fake Amazon website offers a responsive and intuitive user interface to browse products, manage the shopping cart,
+and interact with various features of the e-commerce platform.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Table of Contents 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Badges](#badges)
+- [Tests](#tests)
+- [Contribute](#contribute)
+  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+First, clone this repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+# Clone this repository
+git clone https://github.com/zivgl66/fake-amazon.git
+cd Fake-amazon
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Install dependencies
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Run the app
+npm run start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Functioning checkout page. 
+![2](https://github.com/Zivgl66/Fake-Amazon-server/assets/95753868/e8343b26-58ca-4282-8976-7b2f9a034528)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Login and registration system.
+![3](https://github.com/Zivgl66/Fake-Amazon-server/assets/95753868/aa93dae5-6140-4b93-9d90-39dc68d1f3e4)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Product Catalog**: Displays a catalog of products with detailed information and images.
+- **User Authentication**: Facilitates user registration, login, and authentication processes.
+- **Shopping Cart Management**: Allows users to add products to the cart, modify quantities, and proceed to checkout.
+- **Order Tracking**: Enables users to view and track their orders placed on the platform.
+- **Integration with Server API**: Communicates with the server API to fetch and update product data, user information, and shopping cart details.
 
-### Making a Progressive Web App
+ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+🏆 MIT License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Copyright (c) [2022] [Ziv Gliser]
 
-### Deployment
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### `npm run build` fails to minify
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Badges
+
+![badmath](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![badmath](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![badmath](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![badmath](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![badmath](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![badmath](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+
+
+## Tests
+
+**Comming Soon...**
+
+
+## Contribute
+
+Contributions, issues, and feature requests are welcome!
+
+Give a ⭐️ if you like this project!
+
